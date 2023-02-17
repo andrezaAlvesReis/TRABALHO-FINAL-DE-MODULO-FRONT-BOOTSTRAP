@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="card">
+            <h1 class="card-header text-center">LOGIN</h1>
+
+            <form class="form p-4">
+                <div id='msgError'></div>
+                <div class="form-group">
+                    <label for='usuario'>Usuário</label>
+                    <div class='input-group'>
+                        <input type='text' class='form-control' id='usuario' placeholder='' required>
+                        <div class='input-group-append'>
+                            <div class='input-group-text'>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for='senha'>Senha</label>
+                    <div class='input-group'>
+                        <input type='password' class='form-control' id='senha' placeholder='' required>
+                        <div class='input-group-append'>
+                            <div class='input-group-text'>
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='justify-content-center text-center'>
+                    <button class='btn btn-primary' onclick='entrar()'>Entrar</button>
+                </div>
+                <hr>
+                <p class='text-center'>Ainda não tem uma conta? <a href='./cadastro.html'>Cadastrar-se</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

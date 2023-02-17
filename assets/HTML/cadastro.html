@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="../css/cadastro.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+</head>
+
+<body>
+   
+    <div class="container py-5">
+        <div class="card">
+            <h1 class="card-header text-center">CADASTRE-SE</h1>
+            <div class="card-body">
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>
+
+                <form action="#">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nome" placeholder=" " required>
+                        <label for="nome">Nome</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="usuario" placeholder=" " required>
+                        <label for="usuario">Usuário</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="senha" placeholder=" " required>
+                        <label for="senha">Senha</label>
+                        <div class="input-group-text bg-transparent border-0">
+                            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="confirmSenha" placeholder=" " required>
+                        <label for="confirmSenha">Confirmar Senha</label>
+                        <div class="input-group-text bg-transparent border-0">
+                            <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary" onclick='cadastrar()'>Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    
+    <script src="../cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Estilos para a tabela */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .acao {
+    text-align: center;
+  }
+  
+  /* Estilos para o modal */
+  .modal-dialog {
+    max-width: 400px;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  
